@@ -14,7 +14,7 @@ This repo shows the constructions of dprfMM [1], XorMM and VXorMM. And this appl
 ## File Structure
 
 ```javascript
-XorMM/
+/
 ├── README.md                                       //  introduction
 ├── src
 │   ├── main
@@ -54,5 +54,7 @@ XorMM/
 ├── Server_VXorMM.dat                               //  server storage in VXorMM
 ├── Server_XorMM.dat                                //  server storage in XorMM
 ├── XorMM.iml
+├── Group.py                                        //  Generate data set files that can be read, sorted from large to small according to the vol size of the key  
+├── Get_Data_Distribution.py                        //  View the distribution of data
 └── pom.xml                                         
 ```
