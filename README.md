@@ -20,7 +20,8 @@ XorMM/
 │   ├── main
 │   │   └── java
 │   │      ├── Client
-│   │      │    ├── entity                         
+│   │      │    ├── entity                    
+│   │      │    │   ├── KV2.java                    //  entity for key/vol pairs
 │   │      │    │   └── KV.java                     //  entity for key/value pairs
 │   │      │    ├── Cuckoo_Hash.java                //  setup for dprfMM
 │   │      │    └── Xor_Hash.java                   //  setup for XorMM and VXorMM
@@ -42,10 +43,13 @@ XorMM/
 │               ├── Test_GenMM                      //  generate multi-maps
 │               ├── Test_VXorMM                     //  VXorMM scheme
 │               ├── Test_Xor_Success                //  test the probaility of success for XorMM
+│               ├── Test_Scheme1                    //  kXorMM scheme
+│               ├── Test_kXorMM                     //  kVXorMM scheme          
 │               └── Test_XorMM                      //  XorMM scheme
 │ 
-├── KV_LIST_10_5.dat                                //  the multi-map consists of 2^10 key/value pairs with maximum volume 2^5
-├── Plaintext_LIST_10_5.text                        //  the multi-map consists of 2^10 key/value pairs with maximum volume 2^5
+├── KV1.dat                                         //  the obj of the multi-map of key/value pairs
+├── Plaintext_KV1.txt                               //  the plaintext of the multi-map of key/value pairs
+├── KV2.dat                                         //  the obj of the key count
 ├── Server_DprfMM.dat                               //  server storage in dprfMM
 ├── Server_VXorMM.dat                               //  server storage in VXorMM
 ├── Server_XorMM.dat                                //  server storage in XorMM
